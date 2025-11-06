@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "wich_entity_tooltips",
+	"version": "${version}",
+	"name": "Entity Item Tooltips",
+	"description": "Add extra information to the tooltips for entity spawning items.",
+	"authors": [ "dovewich" ],
+	"contact": {
+		"homepage": "https://www.wich.fun/",
+		"sources": "https://github.com/OfficePigeon/Entity-Tooltips-Mod"
+	},
+	"license": "",
+	"icon": "assets/wich/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+		  "fun.wich.EntityTooltips"
+		]
+	},
+	"mixins": [
+		"wich.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": ">=1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
