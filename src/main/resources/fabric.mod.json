@@ -11,14 +11,14 @@
 	},
 	"license": "",
 	"icon": "assets/wich/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 		  "fun.wich.EntityTooltips"
 		]
 	},
 	"mixins": [
-		"wich.mixins.json"
+		"wich.entitytooltips.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",

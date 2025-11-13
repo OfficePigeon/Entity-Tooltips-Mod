@@ -266,5 +266,10 @@
   "color.minecraft.13": "Green",
   "color.minecraft.14": "Red",
   "color.minecraft.15": "Black",
-  "color.minecraft.16": "Default"
+  "color.minecraft.16": "Default",
+  
+  "tooltip.entity.wich.cluckshroom.variant.0": "Red",
+  "tooltip.entity.wich.cluckshroom.variant.red": "Red",
+  "tooltip.entity.wich.cluckshroom.variant.1": "Brown",
+  "tooltip.entity.wich.cluckshroom.variant.brown": "Brown"
 }
