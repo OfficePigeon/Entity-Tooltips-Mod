@@ -268,8 +268,30 @@
   "color.minecraft.15": "Black",
   "color.minecraft.16": "Default",
   
+  "tooltip.entity.wich.sunken_skeleton.variant.0": "Purple",
+  "tooltip.entity.wich.sunken_skeleton.variant.purple": "Purple",
+  "tooltip.entity.wich.sunken_skeleton.variant.1": "Red",
+  "tooltip.entity.wich.sunken_skeleton.variant.red": "Red",
+  "tooltip.entity.wich.sunken_skeleton.variant.2": "Yellow",
+  "tooltip.entity.wich.sunken_skeleton.variant.yellow": "Yellow",
+  
   "tooltip.entity.wich.cluckshroom.variant.0": "Red",
   "tooltip.entity.wich.cluckshroom.variant.red": "Red",
   "tooltip.entity.wich.cluckshroom.variant.1": "Brown",
-  "tooltip.entity.wich.cluckshroom.variant.brown": "Brown"
+  "tooltip.entity.wich.cluckshroom.variant.brown": "Brown",
+  
+  "tooltip.pig.muddy.mud.0": "Clean",
+  "tooltip.pig.muddy.mud.clean": "Clean",
+  "tooltip.pig.muddy.mud.1": "Dried",
+  "tooltip.pig.muddy.mud.dried": "Dried",
+  "tooltip.pig.muddy.mud.2": "Muddy",
+  "tooltip.pig.muddy.mud.muddy": "Muddy",
+  "tooltip.pig.muddy.flower.0": "Orange Tulip",
+  "tooltip.pig.muddy.flower.orange_tulip": "Orange Tulip",
+  "tooltip.pig.muddy.flower.1": "Pink Tulip",
+  "tooltip.pig.muddy.flower.pink_tulip": "Pink Tulip",
+  "tooltip.pig.muddy.flower.2": "Red Tulip",
+  "tooltip.pig.muddy.flower.red_tulip": "Red Tulip",
+  "tooltip.pig.muddy.flower.3": "White Tulip",
+  "tooltip.pig.muddy.flower.white_tulip": "White Tulip"
 }

@@ -60,6 +60,10 @@ public abstract class ItemStackMixin implements ComponentHolder {
 			if (entityType == EntityType.PANDA) {
 				nbt.getString("MainGene").ifPresent(gene -> textConsumer.accept(Text.translatable("tooltip.panda.variant." + gene)));
 			}
+			else if (entityType == EntityType.PIG) {
+				nbt.getInt("MuddyPigMud").ifPresent(mud -> textConsumer.accept(Text.translatable("tooltip.pig.muddy.mud." + mud)));
+				nbt.getInt("MuddyPigFlower").ifPresent(flower -> textConsumer.accept(Text.translatable("tooltip.pig.muddy.flower." + flower)));
+			}
 			//General Variant Keys
 			String key = entityType.getTranslationKey().replace("entity.minecraft.","");
 			nbt.getString("Variant").ifPresent(variant -> textConsumer.accept(Text.translatable("tooltip." + key + ".variant." + variant.replace(':','.'))));
