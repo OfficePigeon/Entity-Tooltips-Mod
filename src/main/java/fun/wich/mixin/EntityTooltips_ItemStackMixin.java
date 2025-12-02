@@ -28,7 +28,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.function.Consumer;
 
 @Mixin(ItemStack.class)
-public abstract class ItemStackMixin implements ComponentHolder {
+public abstract class EntityTooltips_ItemStackMixin implements ComponentHolder {
 	@Inject(method="appendTooltip", at=@At(value="INVOKE", target="Lnet/minecraft/item/Item;appendTooltip(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/Item$TooltipContext;Lnet/minecraft/component/type/TooltipDisplayComponent;Ljava/util/function/Consumer;Lnet/minecraft/item/tooltip/TooltipType;)V", shift= At.Shift.AFTER))
 	private void InjectTooltips(Item.TooltipContext context, TooltipDisplayComponent displayComponent, @Nullable PlayerEntity player, TooltipType type, Consumer<Text> textConsumer, CallbackInfo ci) {
 		//Check components
@@ -91,9 +91,9 @@ public abstract class ItemStackMixin implements ComponentHolder {
 			nbt.getInt("Size").ifPresent(size -> textConsumer.accept(Text.translatable("tooltip.size").append(size.toString())));
 			nbt.getString("size").ifPresent(size -> textConsumer.accept(Text.translatable("tooltip.size").append(size)));
 			nbt.getInt("size").ifPresent(size -> textConsumer.accept(Text.translatable("tooltip.size").append(size.toString())));
-			nbt.getBoolean("Invisible").ifPresent(invisible -> {
-				if (invisible) textConsumer.accept(Text.translatable("tooltip.invisible"));
-			});
+			nbt.getBoolean("Invisible").ifPresent(invisible -> { if (invisible) textConsumer.accept(Text.translatable("tooltip.invisible")); });
+			nbt.getBoolean("sheared").ifPresent(sheared -> { if (sheared) textConsumer.accept(Text.translatable("tooltip.sheared")); });
+			nbt.getBoolean("Sheared").ifPresent(sheared -> { if (sheared) textConsumer.accept(Text.translatable("tooltip.sheared")); });
 		}
 	}
 	@Unique

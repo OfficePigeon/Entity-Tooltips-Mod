@@ -3,7 +3,7 @@
   "package": "fun.wich.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-	"ItemStackMixin"
+	"EntityTooltips_ItemStackMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
